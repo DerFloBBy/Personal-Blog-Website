@@ -36,7 +36,7 @@ body{
     background-color: rgb(212, 212, 212);
     border-radius: 5px;
     box-shadow: 5px 5px rgb(238, 238, 238);
-    margin: 0px 5px 5px 0px;
+    margin: 0px 25px 5px 20px;
     padding: 5px;
     display: grid;
     grid-template-areas: 
@@ -120,7 +120,15 @@ body{
             "headline headline date";
     }
     
+    .headline{
+        margin: 0px 0px 0px 30px;
+    }
+    
+    .date{
+        margin: 0px 30px 0px 0px;
+    }
 }
+
 
 /* Large devices (desktops, 1024px and up) */
 @media screen and (min-width: 1024px) {
@@ -148,8 +156,7 @@ body{
             "headline headline date";
     
     }
- 
-    /* Versuch zwei Bilder neben einander zu bringen */
+
     #main{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
