@@ -104,8 +104,8 @@ body{
     display: grid;
     grid-template-areas: 
         "ft-links"
-        "ft-favs";
-    /* grid-template-columns: repeat(2, 1fr); */
+        "ft-favs"
+        "ft-cat";
 }
 
 #footer-links{
@@ -169,6 +169,23 @@ body{
     margin: 0px 0px 6px 0px;
 }
 
+#categories{
+    grid-area: ft-cat;
+}
+
+#categories > ul{
+    padding-left: 20px;
+}
+
+#categories > ul > li > a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#categories > ul > li > a:hover{
+    text-decoration: underline;
+}
+
 
 
 
@@ -199,8 +216,8 @@ body{
 
     #footer{
         grid-template-areas: 
-            "ft-links ft-favs";
-        grid-template-columns: repeat(2, 1fr);
+            "ft-links ft-favs"
+            "ft-cat ft-cat";
     }
 }
 
@@ -240,7 +257,6 @@ body{
 
     #footer{
         grid-template-areas: 
-            "ft-links ft-favs";
-        grid-template-columns: repeat(2, 1fr);
+            "ft-links ft-favs ft-cat";
     }
 }
