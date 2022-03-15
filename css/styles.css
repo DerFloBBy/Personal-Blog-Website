@@ -1,15 +1,20 @@
+body{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
 /* Small devices (mobiles, up to 767px) */
 .container{
-    background-color: rgb(240, 140, 140);
+    /* background-color: rgb(240, 140, 140); */
     border: 1px solid red;
-    display: grid;
     width: 95%;
     margin: 0 auto;
+    display: grid;
     grid-gap: 5px;
     grid-template-areas: 
         "hd"
-        "side"
         "main"
+        "side"
         "ft";
 }
 
@@ -22,10 +27,51 @@
 }
 
 .card{
-    border: 1px solid blue;
-    border-radius: 6px;
+    /* border: 1px solid blue; */
+    background-color: rgb(212, 212, 212);
+    border-radius: 5px;
+    box-shadow: 5px 5px rgb(238, 238, 238);
+    margin: 0px 5px 5px 0px;
     padding: 5px;
+    display: grid;
+    grid-template-areas: 
+        "pic"
+        "headline"
+        "date";
+}
 
+.pic{
+    /* border: 1px solid black; */
+    grid-area: pic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic > img{
+    max-width: 60%;
+    object-fit: cover;
+    box-shadow: 3px 3px rgb(228, 228, 228);
+    margin: 0px 0px 6px 0px;
+    
+}
+
+.headline{
+    border: 1px solid black;
+    font-size: 1.25em;
+    grid-area: headline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date{
+    border: 1px solid black;
+    font-size: 0.65em;
+    grid-area: date;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #header{
@@ -49,10 +95,18 @@
     .container{
         background-color: rgb(140, 240, 148);
         grid-template-areas: 
-            "hd hd hd hd"
-            "main main main side"
-            "ft ft ft ft";
+            "hd hd"
+            "main side"
+            "ft ft";
+        grid-template-columns: 1fr 250px;
     }
+
+    .card{
+        grid-template-areas: 
+            "pic pic pic"
+            "headline headline date";
+    }
+    
 }
 
 /* Large devices (desktops, 1024px and up) */
@@ -61,10 +115,11 @@
         background-color: khaki;
         grid-gap: 10px;
         grid-template-areas: 
-            "hd hd hd hd hd hd hd"
-            "main main main main main side side"
-            "ft ft ft ft ft ft ft";
-    }
+            "hd hd"
+            "main side"
+            "ft ft";
+        grid-template-columns: 1fr 250px;
+        }
 
     .box{
         
@@ -75,6 +130,16 @@
     .card{
         border-radius: 10px;
         padding: 10px;
+        grid-template-areas: 
+            "pic pic pic"
+            "headline headline date";
     
+    }
+ 
+    /* Versuch zwei Bilder neben einander zu bringen */
+    #main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-column: 1 / 2; */
     }
 }
