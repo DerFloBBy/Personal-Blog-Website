@@ -34,7 +34,7 @@ body{
 .card{
     /* border: 1px solid blue; */
     background-color: rgb(212, 212, 212);
-    border-radius: 5px;
+    border-radius: 30px 5px;
     box-shadow: 5px 5px rgb(238, 238, 238);
     margin: 0px 25px 5px 20px;
     padding: 5px;
@@ -241,7 +241,6 @@ body{
     }
     
     .card{
-        border-radius: 10px;
         padding: 10px;
         grid-template-areas: 
             "pic pic pic"
