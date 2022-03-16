@@ -27,7 +27,7 @@ body{
 .box{
     /* border: 1px solid black; */
     background-color: azure;
-    border-radius: 7px;
+    border-radius: 7px 0;
     padding: 5px;
     display: grid;
     grid-gap: 5px;
@@ -53,31 +53,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.pic > img{
-    max-width: 60%;
-    object-fit: cover;
-    box-shadow: 3px 3px rgb(228, 228, 228);
-    margin: 0 0 6px 0;
-    
-}
-
-
-.headline{
-    /* border: 1px solid black; */
-    font-family: "Quicksdand", Verdana, sans-serif;
-    font-size: 1.1em;
-    grid-area: headline;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    text-decoration: none;
-}
-
-.headline:hover{
-    text-decoration: underline;
 }
 
 .date{
@@ -248,7 +223,9 @@ body{
 
 
 
+/* ++++++++++++++++++++++++++++++++++++++ */
 /* Medium devices (tablets, 768px and up) */
+/* ++++++++++++++++++++++++++++++++++++++ */
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .container{
         background-color: rgb(140, 240, 148);
@@ -266,10 +243,6 @@ body{
             "headline headline date";
     }
     
-    .headline{
-        margin: 0 0 0 30px;
-    }
-    
     .date{
         margin: 0 30px 0 0;
     }
@@ -282,7 +255,9 @@ body{
 }
 
 
+/* +++++++++++++++++++++++++++++++++++++++ */
 /* Large devices (desktops, 1024px and up) */
+/* +++++++++++++++++++++++++++++++++++++++ */
 @media screen and (min-width: 1024px) {
     .container{
         /* background-color: khaki; */
@@ -297,7 +272,7 @@ body{
 
     .box{
         
-        border-radius: 10px;
+        border-radius: 10px 0;
         padding: 10px;
     }
     
@@ -307,12 +282,6 @@ body{
             "pic pic pic"
             "headline headline date";
     
-    }
-
-    #main{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* grid-column: 1 / 2; */
     }
 
     #footer{
