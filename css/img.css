@@ -1,0 +1,20 @@
+.pic > img{
+    object-fit: cover;
+    box-shadow: 3px 3px rgb(228, 228, 228);
+    margin: 0 0 6px 0;
+}
+
+.fav-pic > img{
+    max-width: 150px;
+    object-fit: cover;
+    box-shadow: 3px 3px rgb(228, 228, 228);
+    margin: 0 0 6px 0;
+}
+
+.side-pic > img{
+    max-width: 80px;
+    object-fit: cover;
+    box-shadow: 3px 3px rgb(228, 228, 228);
+    margin: 0 0 6px 0;
+}
+
