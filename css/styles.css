@@ -18,7 +18,7 @@ body{
     margin: 0 auto;
     display: grid;
     grid-gap: 5px;
-    grid-template-areas: 
+    grid-template-areas:
         "hd"
         "main"
         "side"
@@ -95,7 +95,7 @@ body{
     background-color: #282828;
     color: #fff;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "ft-links"
         "ft-favs"
         "ft-cat";
@@ -232,6 +232,9 @@ body{
     text-decoration: underline;
 }
 
+h3{
+    font-size: 1em;
+}
 
 /* ++++++++++++++++++++++++++++++++++++++ */
 /* Medium devices (tablets, 768px and up) */
@@ -239,7 +242,7 @@ body{
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .container{
         max-width: 750px;
-        grid-template-areas: 
+        grid-template-areas:
             "hd hd"
             "main side"
             "ft ft";
@@ -251,7 +254,7 @@ body{
     }
 
     #footer{
-        grid-template-areas: 
+        grid-template-areas:
             "ft-links ft-favs"
             "ft-cat ft-cat";
     }
@@ -265,19 +268,19 @@ body{
     .container{
         max-width: 1140px;
         grid-template-columns: 1fr 250px;
-        grid-template-areas: 
+        grid-template-areas:
             "hd hd"
             "main side"
             "ft ft";
         }
 
-    .box{        
+    .box{
         border-radius: 10px 0;
         padding: 10px;
     }
 
     #footer{
-        grid-template-areas: 
+        grid-template-areas:
             "ft-links ft-favs ft-cat";
     }
 }

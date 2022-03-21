@@ -8,7 +8,7 @@
 /* Small devices (mobiles, up to 767px) */
 /* ++++++++++++++++++++++++++++++++++++ */
 .card{
-    grid-template-areas: 
+    grid-template-areas:
         "pic"
         "headline"
         "date"
@@ -54,7 +54,7 @@ h1 > a:hover{
 /* ++++++++++++++++++++++++++++++++++++++ */
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .card{
-        grid-template-areas: 
+        grid-template-areas:
             "pic pic pic"
             "headline headline date"
             "text text text"
@@ -69,7 +69,7 @@ h1 > a:hover{
 @media screen and (min-width: 1024px){
     .card{
         padding: 10px;
-        grid-template-areas: 
+        grid-template-areas:
             "pic pic pic"
             "headline headline date"
             "text text text"

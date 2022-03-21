@@ -8,7 +8,7 @@
 /* Small devices (mobiles, up to 767px) */
 /* ++++++++++++++++++++++++++++++++++++ */
 .card{
-    grid-template-areas: 
+    grid-template-areas:
         "pic"
         "headline"
         "date";
@@ -35,12 +35,12 @@
     .headline{
         margin: 0 0 0 30px;
     }
-    
+
     .card{
-        grid-template-areas: 
+        grid-template-areas:
             "pic pic pic"
             "headline headline date";
-    } 
+    }
 }
 
 
@@ -55,7 +55,7 @@
 
     .card{
         padding: 10px;
-        grid-template-areas: 
+        grid-template-areas:
             "pic pic pic"
             "headline headline date";
     }
