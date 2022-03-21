@@ -1,15 +1,13 @@
-/* Import css-styles */
+/* ++++++++++++++++++++++++ */
+/* Import global css-styles */
+/* ++++++++++++++++++++++++ */
 @import url(styles.css);
 
 
+/* ++++++++++++++++++++++++++++++++++++ */
+/* Small devices (mobiles, up to 767px) */
+/* ++++++++++++++++++++++++++++++++++++ */
 .card{
-    /* border: 1px solid black; */
-    background-color: rgb(212, 212, 212);
-    border-radius: 7px 0;
-    box-shadow: 3px 3px rgb(238, 238, 238);
-    margin: 0 25px 5px 20px;
-    padding: 5px;
-    display: grid;
     grid-template-areas: 
         "pic"
         "headline"
@@ -18,20 +16,9 @@
 
 .pic > img{
     max-width: 60%;
-    object-fit: cover;
-    box-shadow: 3px 3px rgb(228, 228, 228);
-    margin: 0 0 6px 0;
-    
 }
 
 .headline{
-    /* border: 1px solid black; */
-    font-family: "Quicksdand", Verdana, sans-serif;
-    font-size: 1.1em;
-    grid-area: headline;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: black;
     text-decoration: none;
 }
@@ -50,20 +37,17 @@
     }
     
     .card{
-    grid-template-areas: 
-        "pic pic pic"
-        "headline headline date";
+        grid-template-areas: 
+            "pic pic pic"
+            "headline headline date";
     } 
 }
-
-
-
 
 
 /* +++++++++++++++++++++++++++++++++++++++ */
 /* Large devices (desktops, 1024px and up) */
 /* +++++++++++++++++++++++++++++++++++++++ */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px){
     #main{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -74,8 +58,5 @@
         grid-template-areas: 
             "pic pic pic"
             "headline headline date";
-    
     }
-
-
 }
