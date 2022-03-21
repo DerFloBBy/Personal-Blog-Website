@@ -198,11 +198,24 @@ body{
 }
 
 #side-categories > ul > li > a{
-    /* color: #fff; */
+    color: #000;
     text-decoration: none;
 }
 
 #side-categories > ul > li > a:hover{
+    text-decoration: underline;
+}
+
+#side-social > ul{
+    padding-left: 20px;
+}
+
+#side-social > ul > li > a{
+    color: #000;
+    text-decoration: none;
+}
+
+#side-social > ul > li > a:hover{
     text-decoration: underline;
 }
 
