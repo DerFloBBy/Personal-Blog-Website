@@ -2,6 +2,20 @@
 @import url(styles.css);
 
 
+.card{
+    /* border: 1px solid black; */
+    background-color: rgb(212, 212, 212);
+    border-radius: 7px 0;
+    box-shadow: 3px 3px rgb(238, 238, 238);
+    margin: 0 25px 5px 20px;
+    padding: 5px;
+    display: grid;
+    grid-template-areas: 
+        "pic"
+        "headline"
+        "date";
+}
+
 .pic > img{
     max-width: 60%;
     object-fit: cover;
@@ -35,7 +49,15 @@
         margin: 0 0 0 30px;
     }
     
+    .card{
+    grid-template-areas: 
+        "pic pic pic"
+        "headline headline date";
+    } 
 }
+
+
+
 
 
 /* +++++++++++++++++++++++++++++++++++++++ */
@@ -47,6 +69,13 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .card{
+        padding: 10px;
+        grid-template-areas: 
+            "pic pic pic"
+            "headline headline date";
+    
+    }
 
 
 }
