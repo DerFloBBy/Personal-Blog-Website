@@ -14,7 +14,8 @@
         "pic"
         "headline"
         "date"
-        "text";
+        "text"
+        "author";
 }
 
 .pic > img{
@@ -60,6 +61,18 @@ h1 > a:hover{
     text-decoration: underline;
 }
 
+.author{
+    border-top: 1px solid black;
+    /* background-color: pink; */
+    grid-area: author;
+    display: flex;
+}
+
+.author-pic > img{
+    width: 60px;
+    margin: 20px;
+}
+
 /* ++++++++++++++++++++++++++++++++++++++ */
 /* Medium devices (tablets, 768px and up) */
 /* ++++++++++++++++++++++++++++++++++++++ */
@@ -72,7 +85,8 @@ h1 > a:hover{
         grid-template-areas: 
             "pic pic pic"
             "headline headline date"
-            "text text text";
+            "text text text"
+            "author author author";
     }
 }
 
@@ -90,7 +104,8 @@ h1 > a:hover{
         grid-template-areas: 
             "pic pic pic"
             "headline headline date"
-            "text text text";
+            "text text text"
+            "author author author";
     
     }
 
